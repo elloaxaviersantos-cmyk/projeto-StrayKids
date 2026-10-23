@@ -1,0 +1,161 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f1f1f1;
+    background: #111111;
+    line-height: 1.6;
+}
+
+/* ----------- Menu topo -----------*/
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    background: #080808;
+    padding: 1rem 1.5rem;
+}
+
+.logo {
+    color: #e50925;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.menu { display: flex; gap: 1rem;}
+.menu a {
+    color: #e2e2e2;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.3rem 0.6rem;
+    border-radius: 8px;
+}
+
+.menu a:hover{background: #333333;}
+.menu a.ativo{
+    background: linear-gradient(90deg, #e50925, #800015);
+}
+
+/* ---------- Conteúdo ----------*/
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.2rem;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(16deg, #8b0018, #e50925); /*pode colocar imagem */
+    color: #fff;
+    border-radius: 16px;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+}
+
+.hero p { 
+    max-width: 520px;
+    margin: 0 auto 1.2rem;
+    opacity: 0.95;
+}
+
+.botao {
+    display: inline-block;
+    background: #fff;
+    color: #c90020;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.botao:hover {transform: scale(1.05);}
+
+/*------------ Cards --------- */
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.card {
+    flex: 1 1 220px;
+    background: #1c1c1c;
+    border: 1px solid #383838;
+    border-radius: 14px;
+    padding: 1.3rem;
+    box-shadow: 0 6px 18px rgb( 0, 0, 0, 0.3);
+}
+
+.card h2 { margin-bottom: 0.4rem; font-family: 1.1rem;}
+
+/* ----------- Conteúdo ---------*/
+
+.conteudo {
+    background: #1c1c1c;
+    border: 1px solid #383838;
+    border-radius: 14px;
+    padding: 1.6rem;
+}
+
+.conteudo h1 { margin-bottom: 0.6rem; color: #ff243d; }
+.conteudo h2 { margin: 1rem 0 0.4rem; color: #e50925; }
+.conteudo ul { margin-left: 1.2rem; }
+
+/*------------ Formulario --------------*/
+
+.form { margin-top: 1re; }
+.campo { margin-bottom: 1rem; }
+
+.campo label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.campo input, .campo textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1.5px solid #444444;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    background: #111111;
+    color: #ffffff;
+}
+
+.campo input:focus, .campo textarea:focus {
+    outline: 3px solid rgba(229,9,37,0.4);
+    border-color: #e50925;
+}
+
+/*--------- redape ------------*/
+
+.rodape {
+    text-align: center;
+    padding: 1.5rem;
+    color: #aaaaaa;
+    font-size: 0.85rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600) {
+    .hero h1 { font-size: 1.5rem;}
+    .menu { width: 100%; justify-content: center;}
+}
+
+.card img{
+    width: 231px;
+    height: 135px;
+}
